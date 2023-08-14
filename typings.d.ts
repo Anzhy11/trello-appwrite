@@ -7,14 +7,14 @@ interface Appwrite {
 }
 
 interface Board {
-  colums: Map<TypedColumn, Column>
+  columns: Map<TypedColumn, Column>
 }
 
 type TypedColumn = 'todo' | 'inprogress' | 'done';
 
 interface Column {
   id: TypedColumn;
-  todo: Todo[];
+  todos: Todo[];
 }
 
 interface Todo {
